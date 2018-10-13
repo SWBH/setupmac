@@ -19,8 +19,7 @@ brew install git ansible
 echo "🎬 Preparing playbooks..."
 install_dir="/tmp/setupmac-$RANDOM"
 mkdir $install_dir
-# TODO: check out scripts from git repo
-cp -rf ./* $install_dir
+git clone https://github.com/ian-zy/setupmac.git $install_dir
 
 echo "📦 Installing applications with ansible ..."
 cd $install_dir
