@@ -1,0 +1,14 @@
+---
+
+- name: install homebrew applications
+  homebrew:
+    name: "{{applications}}"
+    state: latest
+    update_homebrew: yes
+
+- name: install homebrew cask applications
+  homebrew_cask:
+    name: "{{item}}"
+    state: present 
+  with_items: "{{cask_applications}}"
+
