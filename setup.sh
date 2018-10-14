@@ -27,7 +27,7 @@ fi
 
 echo "📦 Installing applications with ansible ..."
 cd $install_dir
-ansible-playbook -i ./hosts setup.yml --verbose || true
+ansible-playbook -i ./hosts setup.yml --ask-become-pass --verbose || true
 
 echo "🗑  Cleaning up ..."
 rm -Rf $install_dir

@@ -1,3 +1,9 @@
 - name: install applications
   include: applications.yml
+  tags:
+    - install
 
+- name: configure applications
+  include: configurations.yml
+  tags:
+    - configure
