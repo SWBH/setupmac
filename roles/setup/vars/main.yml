@@ -19,4 +19,5 @@ cask_applications:
  - docker
  - homebrew/cask-versions/firefox-developer-edition
  - visual-studio-code
-
+ - java
+ 
