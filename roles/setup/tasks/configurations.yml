@@ -8,7 +8,22 @@
     line: '/usr/local/bin/zsh'
 
 - name: set default shell to zsh
-  shell: chsh -s $(which zsh)
+  shell: >
+    if [[ $SHELL =~ .*zsh.* ]]; then 
+        echo "The default shell is already ZSH." 
+    else
+        chsh -s $(which zsh) 
+    fi
 
 - name: add oh-my-zsh
-  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  shell: >
+    if [ -d ~/.oh-my-zsh ]; then
+        echo "oh-my-zsh is installed already."
+    else
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    fi
+
+- name: install .zshrc
+  copy:
+    src: configs/.zshrc
+    dest: "{{ local_home }}/.zshrc"

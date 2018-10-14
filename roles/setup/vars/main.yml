@@ -1,5 +1,7 @@
 ---
 
+local_home: "{{ lookup('env','HOME') }}"
+
 applications:
  - git
  - ansible
