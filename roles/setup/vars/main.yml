@@ -20,4 +20,5 @@ cask_applications:
  - homebrew/cask-versions/firefox-developer-edition
  - visual-studio-code
  - java
+ - jetbrains-toolbox
  
