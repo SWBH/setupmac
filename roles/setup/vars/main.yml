@@ -4,6 +4,7 @@ applications:
  - git
  - ansible
  - zsh
+ - zplug
  - tree
  - curl
  - wget
