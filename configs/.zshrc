@@ -117,3 +117,5 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load
+
+source /usr/local/opt/asdf/asdf.sh
