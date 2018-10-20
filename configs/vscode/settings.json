@@ -1,0 +1,13 @@
+{
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "\"Fira Code\", Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "workbench.iconTheme": "vscode-icons",
+    "parinfer.defaultMode": "disabled",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false
+}

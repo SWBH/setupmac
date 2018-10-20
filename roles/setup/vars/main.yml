@@ -3,26 +3,40 @@
 local_home: "{{ lookup('env','HOME') }}"
 
 applications:
- - git
- - ansible
- - zsh
- - zplug
- - tree
- - curl
- - wget
- - httpie
- - ag
- - asdf
- - yarn
- - leiningen
+  - git
+  - ansible
+  - zsh
+  - zplug
+  - tree
+  - curl
+  - wget
+  - httpie
+  - ag
+  - asdf
+  - yarn
+  - leiningen
  
 cask_applications:
- - spotify
- - iterm2
- - google-chrome
- - docker
- - homebrew/cask-versions/firefox-developer-edition
- - visual-studio-code
- - java
- - jetbrains-toolbox
+  - spotify
+  - iterm2
+  - google-chrome
+  - docker
+  - homebrew/cask-versions/firefox-developer-edition
+  - visual-studio-code
+  - java
+  - jetbrains-toolbox
  
+vscode_extensions:
+  - CoenraadS.bracket-pair-colorizer-2
+  - cospaia.calva-fmt
+  - cospaia.clojure4vscode
+  - cospaia.paredit-revived
+  - DotJoshJohnson.xml
+  - humao.rest-client
+  - k--kato.intellij-idea-keybindings
+  - patbenatar.advanced-new-file
+  - robertohuertasm.vscode-icons
+  - shaunlebron.vscode-parinfer
+  - shd101wyy.markdown-preview-enhanced
+  - yzhang.markdown-all-in-one
+  - zhuangtongfa.Material-theme

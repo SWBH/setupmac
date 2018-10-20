@@ -32,3 +32,12 @@
   copy:
     src: configs/.lein/
     dest: "{{ local_home }}/.lein/"
+
+- name: install vs code extensions
+  shell: code --install-extension {{ item }}
+  with_items: "{{ vscode_extensions }}"
+
+- name: install vs code settings
+  copy:
+    src: configs/vscode/settings.json
+    dest: "{{ local_home }}/Library/Application Support/Code/User/settings.json"
