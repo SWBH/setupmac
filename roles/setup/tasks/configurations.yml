@@ -27,3 +27,8 @@
   copy:
     src: configs/.zshrc
     dest: "{{ local_home }}/.zshrc"
+
+- name: install leiningen profiles
+  copy:
+    src: configs/.lein/
+    dest: "{{ local_home }}/.lein/"
