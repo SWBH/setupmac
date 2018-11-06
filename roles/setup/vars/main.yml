@@ -16,6 +16,7 @@ applications:
   - yarn
   - leiningen
   - kubernetes-helm
+  - go
  
 cask_applications:
   - spotify
@@ -34,8 +35,11 @@ vscode_extensions:
   - cospaia.paredit-revived
   - DotJoshJohnson.xml
   - humao.rest-client
+  - jaredly.reason-vscode
   - k--kato.intellij-idea-keybindings
+  - ms-vscode.Go
   - patbenatar.advanced-new-file
+  - PeterJausovec.vscode-docker
   - robertohuertasm.vscode-icons
   - shaunlebron.vscode-parinfer
   - shd101wyy.markdown-preview-enhanced

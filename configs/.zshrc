@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/Projects/go
+
 ##### ZPLUG Configurations
 
 export ZPLUG_HOME=/usr/local/opt/zplug
